@@ -14,7 +14,7 @@ const employeeRoutes = require("./routes/employee.routes");
 const app = express();
 const PORT = process.env.PORT || 5000; 
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:3000'], // Allow both 5173 and 3000
+  origin: ['http://localhost:5173', 'http://localhost:3000','https://artiststation.co.in'], // Allow both 5173 and 3000
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify allowed HTTP methods
   allowedHeaders: ['Content-Type', 'Authorization'], 
 }));
